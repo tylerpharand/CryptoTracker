@@ -13,6 +13,7 @@
 		54CC5DE1218D06E6005F454F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CC5DE0218D06E6005F454F /* Assets.xcassets */; };
 		54CC5DE4218D06E6005F454F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CC5DE2218D06E6005F454F /* LaunchScreen.storyboard */; };
 		54CC5DEF218D06E7005F454F /* CryptoTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC5DEE218D06E7005F454F /* CryptoTrackerTests.swift */; };
+		54CC5DFA218D071C005F454F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 54CC5DF9218D071C005F454F /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		54CC5DEA218D06E7005F454F /* CryptoTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CC5DEE218D06E7005F454F /* CryptoTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerTests.swift; sourceTree = "<group>"; };
 		54CC5DF0218D06E7005F454F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CC5DF9218D071C005F454F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		54CC5DD8218D06E6005F454F /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				54CC5DF9218D071C005F454F /* images */,
 				54CC5DD9218D06E6005F454F /* AppDelegate.swift */,
 				54CC5DDB218D06E6005F454F /* ViewController.swift */,
 				54CC5DDD218D06E6005F454F /* Main.storyboard */,
@@ -181,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54CC5DFA218D071C005F454F /* images in Resources */,
 				54CC5DE4218D06E6005F454F /* LaunchScreen.storyboard in Resources */,
 				54CC5DE1218D06E6005F454F /* Assets.xcassets in Resources */,
 				54CC5DDF218D06E6005F454F /* Main.storyboard in Resources */,
