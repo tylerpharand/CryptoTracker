@@ -616,7 +616,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     // Assume this is the loaded plist data
 //    let item_array : [String] = ["BTC", "ETH", "USDT", "DASH", "EOS", "LTC", "BCH", "XRP", "DOGE", "ZEC", "BTC", "ETH", "USDT", "DASH", "EOS", "LTC"] //store in plist
 //            let item_array : [String] = ["LTC", "USDT", "EOS"] //store in plist
-    let item_array : [String] = ["USDT", "DASH", "EOS", "LTC"] //store in plist
+    let item_array : [String] = ["DASH", "USDT","BTC", "EOS", "LTC", "XRP"] //store in plist
     var scrollView = UIScrollView()
     let optionsHeader = optionsBar(frame: CGRect(x: 0, y: 0 ,width: 0, height: 0), currency: "CAD", period: "7 Day")
     
