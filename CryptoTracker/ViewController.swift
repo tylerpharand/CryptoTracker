@@ -719,7 +719,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         for _ in item_object_array{
             height += item_height
         }
-        
         height += CGFloat(item_object_array.count - 1) * stackPadding
         return height
     }
