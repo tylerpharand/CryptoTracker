@@ -636,7 +636,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.clipsToBounds = false
         
         view.addSubview(scrollView)
-
+        
+        let refresh = UIRefreshControl(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        refresh.addTarget(self, action: #selector(refreshAll(_:)), for: UIControlEvents.valueChanged)
+        refresh.tintColor = UIColor(red:0.58, green:0.53, blue:0.78, alpha:1.0)
+        
+        scrollView.addSubview(refresh)
+        
         editButton.backgroundColor = UIColor(red:0.25, green:0.22, blue:0.49, alpha:0.4)
         editButton.layer.cornerRadius = editButton.frame.height/2.0
         editButton.addTarget(self, action: #selector(buttonRemove), for: .touchUpInside)
@@ -668,6 +674,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let scrollViewLeft = scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor)
         let scrollViewRight = scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         let scrollViewBottom = scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        
         NSLayoutConstraint.activate([scrollViewTop, scrollViewLeft, scrollViewRight, scrollViewBottom])
         
         optionsHeader.translatesAutoresizingMaskIntoConstraints = false
@@ -731,9 +738,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         stackView.updateConstraints()
     }
     
-    func refreshAll() {
+    func refreshAll(_ refreshControl: UIRefreshControl = UIRefreshControl()) {
         for item in item_object_array{
             item.refreshData(currency: optionsHeader.currencyValue, period: optionsHeader.periodValue)
         }
+        refreshControl.endRefreshing()
     }
 }
