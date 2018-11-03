@@ -722,7 +722,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         height += CGFloat(item_object_array.count - 1) * stackPadding
         return height
-    }   
+    }
     
     func buttonRemove(sender: UIButton!) {
         print("Destroying \(item_object_array[0].symbol)")
