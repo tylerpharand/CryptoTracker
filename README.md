@@ -1,7 +1,7 @@
 # CryptoTracker
 Cryptocurrency tracker for iOS.
 
-Note: App is still in progress. I will to add additional functionality for adding/tracking arbitrary coins based on identifiers. I'd like to generate icons for coins which do not have an image file.
+<b>Note:</b> App is still in progress. I will to add additional functionality for adding/tracking arbitrary coins based on identifiers. I'd like to generate icons for coins which do not have an image file.
 
 - Build with Swift.
 - Makes use of CryptoCompare API: https://www.cryptocompare.com/api/
