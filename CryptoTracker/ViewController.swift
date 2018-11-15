@@ -51,9 +51,6 @@ func fetchData(url : URL, completion:@escaping (_ resultImage: [[Any]]) -> Void)
         if let jsonResponse = jsonString as? [String: Any] {
             if let priceInfo = jsonResponse["Data"] as? [NSDictionary] {
                 for i in priceInfo {
-                    //                    print(i["close"]!)
-                    //                    epoch = i["time"] as! Int
-                    //                    timestamp = NSDate(timeIntervalSince1970: TimeInterval(epoch)) // 4 hrs ahead of Toronto
                     outputData.append([i["time"] as! Int, i["close"] as! Double])
                 }
             }
